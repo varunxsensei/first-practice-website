@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: #1f2937;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            color: #ffffff;
+        }
+        nav div ul{
+            list-style-type:none;
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+        }
+        nav div button{
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        nav div button:hover{
+            background-color: #2d68d7;
+            color: #ffffff;
+    
+        }
+
+        .hero{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            background-color: #1f2937;
+            color: #ffffff;
+            padding: 40px 80px;
+        }
+        
+        .hero div h1{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero div p{
+            font-size: 1.2rem;
+            color: #949eb2;
+            margin-bottom: 1rem ;
+        }
+
+        .hero div button{
+             padding: 8px 16px;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+             width: 200px;
+        }
+
+        .hero div img{
+            border:none;
+            border-radius: 10px;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0 0 10px white;
+        }
+        .hero div img:hover{
+            transform: rotate(10deg);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .logo-text{
+            text-align: center;
+            margin:20px;
+            font-size: 2rem;
+            color: #1f2937;
+        }
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:20px 10% ;
+            border:2px solid #1f2937;
+            padding: 40px 80px;
+        }
+        .logo div img{
+            width:100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .three-card{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px 10%;
+            border:2px solid   #1f2937;
+            padding: 40px 80px;
+            box-shadow: 0 0 10px #1f2937  ;
+        }
+
+        .three-card img{
+            width:30%
+        }
+        .card{
+            border:2px solid #1f2937;
+            width: 20%;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <p>MyLogo</p>
+        </div>
+        <div>
+            <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+        </div>
+        <div>
+            <button>Log In</button>
+            <button>Sign Up</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1 >Hero Title</h1>
+            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium, excepturi culpa quae adipisci deserunt. Molestias explicabo nostrum unde ad?</p>
+            <button>Sign Up</button>
+        </div>
+        <div>
+            <img src="pexels-hiteshchoudhary-18681382.jpg" alt="hiteshdotimage" />
+        </div>
+    </section>
+
+    <h2 class="logo-text">Our Clients</h2>
+    <section class="logo">
+        <div>
+            <img src="img1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img3.jpg" alt="">
+        </div>
+        <div>
+            <img src="img4.jpg" alt="">
+        </div>
+        <div>
+            <img src="img5.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="three-card">
+         <div class="card">
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti illo amet at sit possimus debitis reiciendis fugit ipsa soluta?</p>
+        </div>
+
+         <div class="card">
+            <img src="https://images.pexels.com/photos/2287252/pexels-photo-2287252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti illo amet at sit possimus debitis reiciendis fugit ipsa soluta?</p>
+        </div>
+
+         <div class="card">
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti illo amet at sit possimus debitis reiciendis fugit ipsa soluta?</p>
+        </div>
+    </section>
+</body>
+</html>
